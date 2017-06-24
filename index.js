@@ -55,10 +55,14 @@ function evaluateMessage(recipientId, message){
     if(isContain(message, 'ayuda')){
         finalMessage = 'Si claro!, dime en que te puedo ayudar?';
     } else if(isContain(message, 'gusta')) {
-        //finalMessage = 'Solo se repetir las cosas: ' + message;
         finalMessage = 'Gracias! 😃';
+    } else if(isContain(message, 'excelente')) {
+        finalMessage = 'Gracias! 😃';
+    } else if(isContain(message, 'quisiera información')) {
+        finalMessage = 'Hola que tal? si claro!, dime cual es tu consulta.';
+    } else if(isContain(message, 'necesito información')) {
+        finalMessage = 'Hola que tal? si claro!, dime cual es tu consulta.';
     } else {
-        //finalMessage = 'Solo se repetir las cosas: ' + message;
         finalMessage = 'Hola que tal? me puedes decir tu nombre';
     }
     sendMessageText(recipientId, finalMessage);
@@ -94,5 +98,8 @@ function callSendAPI(messageData){
 }
 
 function isContain(sentence, word){
-    return sentence.indexOf(word) > -1;
+    var str = word;
+    var res = str.toLowerCase();
+    //return sentence.indexOf(word) > -1;
+    return sentence.indexOf(res) > -1;
 }
