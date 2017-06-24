@@ -54,6 +54,9 @@ function evaluateMessage(recipientId, message){
     var finalMessage = '';
     if(isContain(message, 'ayuda')){
         finalMessage = 'Si claro!, dime en que te puedo ayudar?';
+    } else if(isContain(message, 'gusta')) {
+        //finalMessage = 'Solo se repetir las cosas: ' + message;
+        finalMessage = 'Gracias! 😃';
     } else {
         //finalMessage = 'Solo se repetir las cosas: ' + message;
         finalMessage = 'Hola que tal? me puedes decir tu nombre';
