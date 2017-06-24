@@ -1,0 +1,26 @@
+{
+  "name": "petshappy",
+  "version": "1.0.0",
+  "description": "Boot facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcanarip/petshappy.git"
+  },
+  "author": "Jorge Cañari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcanarip/petshappy/issues"
+  },
+  "homepage": "https://github.com/jcanarip/petshappy#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.8",
+    "request": "^2.81.0"
+  }
+}
